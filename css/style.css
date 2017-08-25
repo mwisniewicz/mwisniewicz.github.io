@@ -1,14 +1,104 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Oswald|Pacifico|Play');
+@import url('https://fonts.googleapis.com/css?family=Economica:400,700|Fjalla+One|Pacifico');
+
+* {
+	padding:0;
+	margin:0;
+	border:0;
+}
 
 body {
-	background: #f85032;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #e73827, #f85032);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background: #0f0c29;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.construction {
-	text-align: center;
+.wrapper {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.logo {
+	padding: 6px;
+	font-family: 'Economica', sans-serif;
+	font-size: 50px;
 	color: #FFFFFF;
-	font-family: 'Play', sans-serif;
+	text-transform: uppercase;
+	border: 1px solid #fff;
+	transition: 0.2s ease-in-out;
 }
+
+.logo:hover {
+
+	opacity: 0.7;
+}
+
+ul.top-nav {
+	list-style: none;
+	display: flex;
+}
+
+ul.top-nav li {
+	padding: 5px;
+}
+
+ul.top-nav li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Economica', sans-serif;
+	font-size: 20px;
+	transition: 0.3s ease-in-out;
+}
+
+ul.top-nav li a:hover {
+	opacity: 0.6;
+	filter: blur(0.5px);
+	}
+
+footer .footer-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer span {
+	color: #FFFFFF;
+	font-family: 'Economica', sans-serif;
+	text-align: center;
+}
+footer nav {
+	padding: 20px;
+}
+
+ul.footer-nav {
+	list-style: none;
+	display: flex;
+}
+
+ul.footer-nav li {
+	padding: 5px;
+}
+
+ul.footer-nav li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Economica', sans-serif;
+	font-size: 14px;
+	transition: 0.3s ease-in-out;
+}
+
+ul.footer-nav li a:hover {
+	opacity: 0.6;
+	filter: blur(0.5px);
+	}
+	.content {
+		height: 500px;
+	}
