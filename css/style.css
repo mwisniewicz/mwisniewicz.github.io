@@ -22,6 +22,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid white;
 }
 
 .logo {
@@ -42,10 +44,12 @@ header {
 ul.top-nav {
 	list-style: none;
 	display: flex;
+
 }
 
 ul.top-nav li {
 	padding: 5px;
+	margin-right: 10px;
 }
 
 ul.top-nav li a {
@@ -53,7 +57,7 @@ ul.top-nav li a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: 'Economica', sans-serif;
-	font-size: 20px;
+	font-size: 25px;
 	transition: 0.3s ease-in-out;
 }
 
@@ -67,38 +71,85 @@ footer .footer-bar {
 	align-items: center;
 	justify-content: space-between;
 }
+	/* FORM */
 
-footer span {
-	color: #FFFFFF;
-	font-family: 'Economica', sans-serif;
-	text-align: center;
-}
-footer nav {
-	padding: 20px;
-}
+	.content {
+		padding: 30px 0px 0px 0px;
+		margin:0;
+	}
 
-ul.footer-nav {
-	list-style: none;
-	display: flex;
-}
-
-ul.footer-nav li {
-	padding: 5px;
-}
-
-ul.footer-nav li a {
-	color: #FFFFFF;
-	text-decoration: none;
+form { margin:0; }
+form input {
+	background-color: transparent;
+	color: white;
+		
+	font-size: 15px;
 	text-transform: uppercase;
 	font-family: 'Economica', sans-serif;
-	font-size: 14px;
-	transition: 0.3s ease-in-out;
+	letter-spacing: 2px;
+	padding: 0px 0px 0px 10px;
+	border: 2px solid rgba(255,255,255,0.6);
+	height: 40px;
+	min-width: 400px;
+	margin: 20px;
 }
 
-ul.footer-nav li a:hover {
-	opacity: 0.6;
-	filter: blur(0.5px);
-	}
-	.content {
-		height: 500px;
-	}
+form input:hover, form input:focus {
+
+	border: 2px solid rgba(255,255,255,1.0);
+}
+
+
+
+form textarea {
+	background-color: transparent;
+	color: white;
+	font-family: 'Economica', sans-serif;
+	letter-spacing: 2px;
+	border: 2px solid rgba(255,255,255,0.6);
+	text-transform: uppercase;
+	padding: 10px 0px 0px 10px;
+	font-size: 15px;
+	height: 200px;
+	min-width: 400px;
+	margin: 20px;
+}
+
+form textarea:hover {
+	border: 2px solid rgba(255,255,255,1.0);
+}
+
+input.button { 
+	
+	border: 2px solid rgba(255,255,255,0.6);
+	width: 410px;
+	transition: 0.2s;
+ }
+
+ input.button:hover { 
+	
+	border: 2px solid rgba(255,255,255,0.6);
+	background-color: white;
+	color: purple;
+	cursor: pointer;
+	font-weight: 700;
+	transition: 0.2s;
+ }
+
+ .copy {
+ 	text-align: center;
+ 	width: 100%;
+ 	color: #FFFFFF;
+	font-family: 'Economica', sans-serif;
+	position: fixed;
+	bottom: 0px;
+	margin-top: 20px;
+ }
+
+ p.sent {
+ 	text-align: center;
+ 	width: 100%;
+ 	color: #fff;
+ 	font-size: 40px;
+ 	font-family: 'Economica', sans-serif;
+ }
